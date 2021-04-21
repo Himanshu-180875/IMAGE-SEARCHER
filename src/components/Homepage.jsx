@@ -34,6 +34,16 @@ class HomePage extends Component {
          })
         }
         update = () => {
+          if(!this.state.searchfield){
+           
+            this.setState({
+              photos:[]
+            })
+          
+            
+            
+          }
+          else{
           fetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=ccbb9f178ea920f9d4d2b9ee1433c6d0&tags=${this.state.searchfield}&format=json&nojsoncallback=1`)
           .then(res => res.json())
           .then( (result) => {
@@ -50,7 +60,7 @@ class HomePage extends Component {
            
             
             })
-        }
+        }}
     render() { 
         return (
           
@@ -73,7 +83,7 @@ class HomePage extends Component {
               <div className="autocom-box">
             </div>
               
-              <div className="icon" onClick = {this.update}><i className="fas fa-search"></i>  </div>
+              <div className="icon"  onClick = {this.update}><i className="fas fa-search"></i>  </div>
               
             </div>
          
