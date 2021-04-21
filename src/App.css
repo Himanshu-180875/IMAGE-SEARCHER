@@ -84,7 +84,7 @@ div.gallery {
   display: grid;
   grid-template-columns: auto auto auto;    
  
-  padding-top:11%;
+  padding-top:13%;
   width: 100%;
   
 }
