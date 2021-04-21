@@ -119,7 +119,7 @@ div.gallery img {
 @media screen  and (max-width: 800px){
   div.gallery {
     grid-template-columns: auto auto;
-    padding-top:16%; 
+    padding-top:14%; 
 
 
   }
@@ -134,7 +134,7 @@ div.gallery img {
    
   }
   div.gallery {
-   padding-top:23%; 
+   padding-top:24%; 
 }
 
 }
